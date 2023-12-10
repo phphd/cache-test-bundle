@@ -69,7 +69,8 @@ final class ClearCachePoolsExtensionTest extends TestCase
             ->willReturnMap([
                 ['first', ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $firstPool],
                 ['second', ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $secondPool],
-            ]);
+            ])
+        ;
 
         $this->extension->executeBeforeTest(implode('::', [ClearableKernelTestCaseStub::class, 'testTrue']));
     }
@@ -80,7 +81,8 @@ final class ClearCachePoolsExtensionTest extends TestCase
 
         $this->container
             ->method('get')
-            ->willReturnMap([['web', ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $cachePool]]);
+            ->willReturnMap([['web', ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $cachePool]])
+        ;
 
         $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionMessage('Expected the service "web" to be instance of Psr\Cache\CacheItemPoolInterface');
@@ -95,7 +97,8 @@ final class ClearCachePoolsExtensionTest extends TestCase
 
         $this->container
             ->method('get')
-            ->willReturnMap([['web', ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $cachePool]]);
+            ->willReturnMap([['web', ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $cachePool]])
+        ;
 
         $this->extension->executeBeforeTest(implode('::', [ClearableWebTestCaseStub::class, 'testTrue']));
         self::assertFalse(KernelTestCaseStub::isKernelBooted());
