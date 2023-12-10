@@ -1,13 +1,13 @@
 PhdCacheTestBundle
 ==================
 
-📦 Provides Symfony Cache clearing extension for PHPUnit.
+🧰 Provides Symfony Cache clearing extension for PHPUnit.
 
 [![Codecov](https://codecov.io/gh/phphd/cache-test-bundle/graph/badge.svg?token=4M4X4DFHG6)](https://codecov.io/gh/phphd/cache-test-bundle)
 [![Licence](https://img.shields.io/github/license/phphd/cache-test-bundle.svg)](https://github.com/phphd/cache-test-bundle/blob/main/LICENSE)
 [![Build Status](https://github.com/phphd/cache-test-bundle/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/phphd/cache-test-bundle/actions?query=branch%3Amain)
 
-## Installation 🚀
+## Installation ⚒️
 
 1. Install via composer
 
@@ -29,7 +29,7 @@ PhdCacheTestBundle
         </extensions>
     ```
 
-## Usage ⚒️
+## Usage 🚀
 
 It is possible to use this bundle to clear cache pools for any tests that extend
 `Symfony\Bundle\FrameworkBundle\Test\KernelTestCase` (`WebTestCase`, `ApiTestCase`, etc.)
