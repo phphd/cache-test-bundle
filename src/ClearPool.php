@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Attribute;
+namespace PhPhD\CacheTest;
 
 use Attribute;
 

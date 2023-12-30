@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Tests\Stub\Outlet;
+namespace PhPhD\CacheTest\Tests\Stub\Outlet;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 

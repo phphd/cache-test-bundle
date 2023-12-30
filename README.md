@@ -25,7 +25,7 @@ PhdCacheTestBundle
 
     ```xml
         <extensions>
-            <extension class="PhPhD\CacheTestBundle\PHPUnit\ClearCachePoolsExtension"/>
+            <extension class="PhPhD\CacheTest\Hook\ClearCachePoolsExtension"/>
         </extensions>
     ```
 
@@ -35,9 +35,10 @@ It is possible to use this bundle to clear cache pools for any tests that extend
 `Symfony\Bundle\FrameworkBundle\Test\KernelTestCase` (`WebTestCase`, `ApiTestCase`, etc.)
 
 Use `#[ClearPool]` attribute in order to clear caches:
+
 ```php
+use PhPhD\CacheTest\ClearPool;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
-use PhPhD\CacheTestBundle\Attribute\ClearPool;
 
 #[ClearPool('my_cache_pool')]
 final class BlogControllerTest extends WebTestCase

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Accessor;
+namespace PhPhD\CacheTest\Accessor;
 
 use Closure;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;

@@ -4,10 +4,10 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Clearer;
+namespace PhPhD\CacheTest\Clearer;
 
-use PhPhD\CacheTestBundle\Accessor\TestContainerAccessor;
-use PhPhD\CacheTestBundle\Attribute\ClearPool;
+use PhPhD\CacheTest\Accessor\TestContainerAccessor;
+use PhPhD\CacheTest\ClearPool;
 use ReflectionAttribute;
 use ReflectionClass;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\PHPUnit;
+namespace PhPhD\CacheTest\Hook;
 
-use PhPhD\CacheTestBundle\Clearer\TestClearer;
+use PhPhD\CacheTest\Clearer\TestClearer;
 use PHPUnit\Runner\BeforeTestHook;
 
 final class ClearCachePoolsExtension implements BeforeTestHook

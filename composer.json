@@ -38,15 +38,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "PhPhD\\CacheTestBundle\\": ""
+            "PhPhD\\CacheTestBundle\\": "",
+            "PhPhD\\CacheTest\\": "src/"
         },
         "exclude-from-classmap": [
-            "/Tests/"
+            "/tests/"
         ]
     },
     "autoload-dev": {
+        "psr-4": {
+            "PhPhD\\CacheTest\\Tests\\": "tests/"
+        },
         "files": [
-            "Tests/aliases.php"
+            "tests/aliases.php"
         ]
     },
     "scripts": {

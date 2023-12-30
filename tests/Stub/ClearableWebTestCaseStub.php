@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Tests\Stub;
+namespace PhPhD\CacheTest\Tests\Stub;
 
-use PhPhD\CacheTestBundle\Attribute\ClearPool;
+use PhPhD\CacheTest\ClearPool;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 /**

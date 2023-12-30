@@ -15,13 +15,6 @@
             <directory name="vendor"/>
         </ignoreFiles>
     </projectFiles>
-    <issueHandlers>
-        <UnusedClass>
-            <errorLevel type="suppress">
-                <referencedClass name="PhPhD\CacheTestBundle\PhdCacheTestBundle"/>
-            </errorLevel>
-        </UnusedClass>
-    </issueHandlers>
     <plugins>
         <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
     </plugins>

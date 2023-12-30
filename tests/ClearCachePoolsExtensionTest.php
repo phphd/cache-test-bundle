@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Tests;
+namespace PhPhD\CacheTest\Tests;
 
-use PhPhD\CacheTestBundle\PHPUnit\ClearCachePoolsExtension;
-use PhPhD\CacheTestBundle\Tests\Stub\ClearableKernelTestCaseStub;
-use PhPhD\CacheTestBundle\Tests\Stub\ClearableWebTestCaseStub;
-use PhPhD\CacheTestBundle\Tests\Stub\NonClearableTestCaseStub;
-use PhPhD\CacheTestBundle\Tests\Stub\Outlet\KernelTestCaseStub;
+use PhPhD\CacheTest\Hook\ClearCachePoolsExtension;
+use PhPhD\CacheTest\Tests\Stub\ClearableKernelTestCaseStub;
+use PhPhD\CacheTest\Tests\Stub\ClearableWebTestCaseStub;
+use PhPhD\CacheTest\Tests\Stub\NonClearableTestCaseStub;
+use PhPhD\CacheTest\Tests\Stub\Outlet\KernelTestCaseStub;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Cache\CacheItemPoolInterface;
@@ -19,11 +19,11 @@ use UnexpectedValueException;
 use function implode;
 
 /**
- * @covers \PhPhD\CacheTestBundle\PHPUnit\ClearCachePoolsExtension
- * @covers \PhPhD\CacheTestBundle\Clearer\CacheItemPoolsClearer
- * @covers \PhPhD\CacheTestBundle\Clearer\TestClearer
- * @covers \PhPhD\CacheTestBundle\Accessor\TestContainerAccessor
- * @covers \PhPhD\CacheTestBundle\Attribute\ClearPool
+ * @covers \PhPhD\CacheTest\Hook\ClearCachePoolsExtension
+ * @covers \PhPhD\CacheTest\Clearer\CacheItemPoolsClearer
+ * @covers \PhPhD\CacheTest\Clearer\TestClearer
+ * @covers \PhPhD\CacheTest\Accessor\TestContainerAccessor
+ * @covers \PhPhD\CacheTest\ClearPool
  *
  * @internal
  */

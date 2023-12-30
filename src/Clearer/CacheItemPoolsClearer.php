@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\CacheTestBundle\Clearer;
+namespace PhPhD\CacheTest\Clearer;
 
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
